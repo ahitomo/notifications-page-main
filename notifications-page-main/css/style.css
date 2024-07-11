@@ -1,0 +1,190 @@
+/* * {
+    outline: solid 1px black;
+} */
+
+body {
+    background-color: hsl(211, 68%, 94%);
+    font-size: 16px;
+    color: hsl(224, 21%, 14%);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.flame {
+    margin: 0 auto;
+    padding: 10px 30px;
+    width: 740px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            h2 {
+                font-weight: 800;
+            }
+
+            div {
+                justify-content: center;
+                width: 40px;
+                height: 30px;
+                background-color: hsl(219, 85%, 26%);
+                border-radius: 25%;
+                font-weight: 800;
+                color: hsl(0, 0%, 100%);
+            }
+        }
+
+        #read {
+            color: hsl(219, 12%, 42%);
+        }
+
+        #read:hover {
+            color: hsl(219, 85%, 26%);
+            cursor: pointer;
+        }        
+
+    }
+
+    main article {
+        display: flex;
+        gap: 20px;
+        align-items: start;
+        padding: 16px;
+        border-radius: 5px;
+        margin-block: 10px;
+            
+            img {
+                width: 50px;
+                height: 50px;
+            }
+
+            div p {
+                margin-block: 0;
+                align-items: center;
+                line-height: 25px;
+
+                .name {
+                    font-weight: 800;
+                }
+
+                .name a {
+                    color: hsl(224, 21%, 14%);
+                    text-decoration: none;
+                }
+
+                .action {
+                    color: hsl(219, 12%, 42%);
+                }
+
+                .comment, .group {
+                    font-weight: 800;
+                }
+
+                .comment a, .group a {
+                    color: hsl(219, 12%, 42%);
+                    text-decoration: none;
+                }
+
+                .notification {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background-color: hsl(1, 90%, 64%);
+                    border-radius: 50%;
+                }
+                
+                a:hover {
+                    color: hsl(219, 85%, 26%);
+                }        
+            }
+
+            .time {
+                color: hsl(219, 14%, 63%);
+            }
+
+        .message {
+            display: block;
+            border: solid 1px hsl(219, 14%, 63%);
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 40px 0 0;
+
+            a {
+                color: hsl(219, 12%, 42%);
+                text-decoration: none;
+            }
+        }
+
+        .message:hover {
+            background-color: hsl(205, 33%, 90%);
+            border: solid 1px hsl(205, 33%, 90%);
+            cursor: pointer;
+        }
+
+        .user_img {
+            display: block;
+            position: sticky;
+            left: 100%;
+            transform: translate(-40px);
+        }
+    }
+}
+
+.unread {
+    background-color: hsl(210, 60%, 98%);
+    border: hsl(210, 60%, 98%);
+
+}
+
+@media screen and (max-width:740px) {
+
+    body {
+        background-color: hsl(0, 0%, 100%);
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .flame {
+        width: 96vw;
+        margin: 0;
+        padding: 0 2vw 0 2vw;
+
+        main article {
+            .message {
+                margin: 2vw 0 0 0;
+            }
+
+            .user_img {
+                transform: initial;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:370px) {
+
+    .frame {
+        header {
+            font-size: 4.324324324324324vw;
+
+            div {
+                div {
+                    width: 10.81081081081081vw;
+                    height: 8.108108108108108vw;
+                }
+            }
+        }
+    }
+}
